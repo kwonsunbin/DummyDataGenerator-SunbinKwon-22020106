@@ -1,5 +1,10 @@
 plugins {
     id("java")
+    id("application")
+}
+
+application {
+    mainClass.set("org.example.Main")
 }
 
 group = "org.example"
@@ -10,6 +15,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.google.code.gson:gson:2.11.0")
     testImplementation(platform("org.junit:junit-bom:6.0.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
