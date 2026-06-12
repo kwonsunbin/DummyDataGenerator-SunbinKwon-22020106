@@ -1,0 +1,1 @@
+rootProject.name = "DummyDataGenerator-SunbinKwon-22020106"
